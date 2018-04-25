@@ -141,12 +141,12 @@
 <p><strong>自定义Message</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.blockUI(&#123; <span class="attr">message</span>: <span class="string">'&lt;h1&gt;&lt;img src="busy.gif" /&gt; Just a moment...&lt;/h1&gt;'</span> &#125;);</span><br></pre></td></tr></table></figure>
 <p><strong>添加样式</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   $.blockUI(&#123; </span><br><span class="line">	message: <span class="string">'&lt;h1&gt;&lt;img src="busy.gif" /&gt; Just a moment...&lt;/h1&gt;'</span>，</span><br><span class="line">	css: &#123; <span class="attr">backgroundColor</span>: <span class="string">'#f00'</span>, <span class="attr">color</span>: <span class="string">'#fff'</span>&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    $.blockUI(&#123; </span><br><span class="line">		message: <span class="string">'&lt;h1&gt;&lt;img src="busy.gif" /&gt; Just a moment...&lt;/h1&gt;'</span>，</span><br><span class="line">		css: &#123; <span class="attr">backgroundColor</span>: <span class="string">'#f00'</span>, <span class="attr">color</span>: <span class="string">'#fff'</span>&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p><strong>解除锁定</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.unblockUI();</span><br></pre></td></tr></table></figure>
 <p><strong>绑定所有ajax请求</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ajaxStart($.blockUI).ajaxStop($.unblockUI);</span><br></pre></td></tr></table></figure>
-<p>参考：<a href="&quot;http://malsup.com/jquery/block/&quot;">Jquery Block UI</a></p>
+<p>参考：<a href="http://malsup.com/jquery/block/" target="_blank" rel="noopener">Jquery Block UI</a></p>
 
             </div>
 
