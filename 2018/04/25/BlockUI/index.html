@@ -68,18 +68,12 @@
 		
 <!-- Layouts -->
 
-    <!-- Tags Cloud -->
-    
-<link rel="stylesheet" href="/css/item.css" />
-<style >
-    .row a{
-        border-bottom: none;
-    }
-    .special{
-        padding: 0;
-        padding: 2rem;
-    }
-</style>
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
 <body class="is-loading">
     <!-- Wrapper 外包 s-->
     <div id="wrapper" class="fade-in">
@@ -134,30 +128,34 @@
 		            
 			</ul>
 </nav>
-                <div id="main">
-            <!-- Main first s-->
-            <article id="me" class="panel">
-                <header style="color: #000000">
-                    <h1>Ackcom Blog</h1>
-                    <p>Coder in World,in life</p>
-                </header>
-                <a href="" class="jumplink pic">
-                    <span class="arrow icon fa-chevron-right"><span></span></span>
-                    <img src="/images/me.jpg" alt="" />
-                </a>
-            </article>
-            <!-- Main first e-->
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(http://ackcom.wang/images/thumbs/05.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >BlockUI详细用法</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="BlockUI详细用法"><a href="#BlockUI详细用法" class="headerlink" title="BlockUI详细用法"></a>BlockUI详细用法</h1><h3 id="jQuery-BlockUI-Plugin概述："><a href="#jQuery-BlockUI-Plugin概述：" class="headerlink" title="jQuery BlockUI Plugin概述："></a>jQuery BlockUI Plugin概述：</h3><p>jQuery BlockUI插件可以在不锁定浏览器的同时，模拟同步模式下发起Ajax请求的行为。该插件激活时，会阻止用户在页面进行的操作，直到插件被关闭。BlockUI通过向DOM中添加元素实现其外观和组织用户交互的行为。</p>
+<p><strong>简单应用</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.blockUI();</span><br></pre></td></tr></table></figure>
+<p><strong>自定义Message</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.blockUI(&#123; <span class="attr">message</span>: <span class="string">'&lt;h1&gt;&lt;img src="busy.gif" /&gt; Just a moment...&lt;/h1&gt;'</span> &#125;);</span><br></pre></td></tr></table></figure>
+<p><strong>添加样式</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.blockUI(&#123; <span class="attr">message</span>: <span class="string">'&lt;h1&gt;&lt;img src="busy.gif" /&gt; Just a moment...&lt;/h1&gt;'</span>，css: &#123; <span class="attr">backgroundColor</span>: <span class="string">'#f00'</span>, <span class="attr">color</span>: <span class="string">'#fff'</span>&#125;  &#125;);</span><br></pre></td></tr></table></figure>
+<p><strong>解除锁定</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.unblockUI();</span><br></pre></td></tr></table></figure>
+<p><strong>绑定所有ajax请求</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ajaxStart($.blockUI).ajaxStop($.unblockUI);</span><br></pre></td></tr></table></figure>
+<p>参考：<a href="&quot;http://malsup.com/jquery/block/&quot;">Jquery Block UI</a></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!--  - partial('_widget/comment/' + theme.comment.use + '/enter') -->
+
+
         </div>
-
-        <section class="special">
-                            <div class="row" style="border-bottom: none;">
-
-        <a href="/tags/net/" style="font-size: 16px;">.net</a> <a href="/tags/Dynamice-CRM/" style="font-size: 16px;">Dynamice CRM</a> <a href="/tags/JS/" style="font-size: 16px;">JS</a>
-
-                            </div>
-                    
-        </section>
-
         <!-- Copyright 版权 start -->
                 <div id="copyright">
             <ul>
@@ -169,6 +167,7 @@
         </div>
     </div>
 </body>
+
 
 
  	
